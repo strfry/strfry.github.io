@@ -1,8 +1,16 @@
 theme: jekyll-theme-hacker
+permalink: none
 
 title: strfry
-description: "Random collection of ramblings and stuff i do"
+description: "Random collection of stuff in encounter"
 baseurl: ""
+
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
