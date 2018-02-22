@@ -1,7 +1,7 @@
 theme: jekyll-theme-hacker
 permalink: none
 
-title: strfry
+title: strfry's blag
 description: "Random collection of stuff in encounter"
 baseurl: ""
 
@@ -14,3 +14,7 @@ defaults:
       path: "images"
     values:
       image: true
+
+collections:
+  projects:
+    output: true

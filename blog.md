@@ -1,6 +1,16 @@
 ---
-layout: default
+permalink: /blog/index.html
+layout: post
 ---
+<!--
+{% for item in site.posts %}
+<h2>{{ item.title }}</h2> 
+  <p>{{ item.description }}</p>
+  <span class="post-meta">{{ item.date | date: "%b %-d, %Y" }}</span>
+
+  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
+-->
 
 <div class="home">
 
@@ -18,3 +28,6 @@ layout: default
   </ul>
 
 </div>
+
+
+
