@@ -3,4 +3,4 @@ permalink: about/index.html
 layout: post
 ---
 
-<!--  -![Me](../images/mephoto_suitcase.jpg) -->
+![Me](../images/mephoto_suitcase.jpg)

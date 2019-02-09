@@ -15,7 +15,7 @@ layout: post
 <div class="home">
 
   <ul class="post-list">
-    {% for post in (site.posts) %}
+    {% for post in site.posts %}
       <li>
 
         <h2>

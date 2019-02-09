@@ -76,11 +76,11 @@ Kindly deny the tour, and find yourself in the TempleOS command prompt.
 
 What we need to do know, is run the kernel installation routine, to fix up
 those port number.
-Type 'BootHDIns;', go through the prompts until it asks for those I/O port numbers.
+Type `BootHDIns;`, go through the prompts until it asks for those I/O port numbers.
 Use those we found above, in hexadecimal form, in our case 0x2118 and 0x2124.
 Everything else can be kept at default.
 
-After that, you can 'Reboot;', but that won't work inside the VM anymore.
+After that, you can `Reboot;`, but that won't work inside the VM anymore.
 Now it's time to reboot the machine and try it on the metal.
 
 Your computer should now either be booting TempleOS, or it doesn't. Good luck!
@@ -92,7 +92,7 @@ Your computer should now either be booting TempleOS, or it doesn't. Good luck!
 
 TempleOS' creator Terry went for the lowest common denominator in
 implementing harddrive support: The ATA PIO compatibility layer.
-This involves poking at certain I/O-Registers, like 0x01f0 for the primary ATA controller. [1]
+This involves poking at [certain I/O-Registers](https://wiki.osdev.org/I/O_Ports), like 0x01f0 for the primary ATA controller.
 
 The installer will probe only probe certain fixed locations of these ports,
 that happen to match those provided by default in Qemu or other VM software.
@@ -113,7 +113,7 @@ media and the according drivers, that might be very complex.
 For this reason, the BIOS implements simple "drivers" for all supported boot methods,
 and makes simple access method available through the infamous [Interrupt 0x13](https://en.wikipedia.org/wiki/INT_13H)
 This might include drivers for ATA controllers, SATA's AHCI, a complete USB-Stack etc.
-If you're interested in the details, you can take a look behind the curtain in the open (SeaBIOS)[https://github.com/coreboot/seabios]
+If you're interested in the details, you can take a look behind the curtain in the open [SeaBIOS](https://github.com/coreboot/seabios)
 
 ## Real-Mode
 
@@ -131,7 +131,7 @@ TempleOS already needs to take care that it can fit the first stage into those 6
 
 ## Proposal
 
-In theory, it's possible to reach higher addresses in real-mode with some trickery (the so-called (Unreal Mode)[https://wiki.osdev.org/Unreal_Mode]).
+In theory, it's possible to reach higher addresses in real-mode with some trickery, the so-called [Unreal Mode](https://wiki.osdev.org/Unreal_Mode) .
 
 Considering that there are lots of modern-but-not-too-recent machines around
 with lots of RAM and no optical drive, it might be possible to modify the bootloader
@@ -173,10 +173,10 @@ ATAReadNativeMax?
 
 kernel_cfg->add_dev ??
     CKCfg
-!-->
 
 
 BootHDIns -> I/O port   2118    2124
+!-->
 
 
 # TL;DR
@@ -187,4 +187,3 @@ BootHDIns -> I/O port   2118    2124
 4) Run `BootHDIns;`, and type in your native I/O ports when prompted
 
 
-[1](https://wiki.osdev.org/I/O_Ports)

@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="home">
-
+  {% assign all_posts = site.posts | concat: site.projects  %}
   <ul class="post-list">
-    {% for post in (site.posts) %}
+    {% for post in all_posts %}
       <li>
 
         <h2>

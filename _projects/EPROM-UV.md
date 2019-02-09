@@ -1,7 +1,7 @@
 ---
 date:	2018-02-22 01:31:00 +0100
 title:	UV EPROM Pi Project
-#categories: project blog
+categories: project blog
 layout: post
 ---
 
