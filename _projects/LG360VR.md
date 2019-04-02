@@ -9,3 +9,4 @@ layout: post
 
 ![](../images/Adapter.svg)
 ![](../images/lg360vr-pcb1.png)
+![](../images/lg360vr-case.jpg)
