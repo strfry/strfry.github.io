@@ -5,8 +5,10 @@ categories: project blog
 layout: post
 ---
 
-[https://github.com/strfry/LG360VR]
+[https://github.com/strfry/LG360VR](https://github.com/strfry/LG360VR)
 
 ![](../images/Adapter.svg)
 ![](../images/lg360vr-pcb1.png)
 ![](../images/lg360vr-case.jpg)
+
+[Contact](/about)
